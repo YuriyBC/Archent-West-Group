@@ -1,0 +1,19 @@
+$browserContext: 16;
+$baseWidth: 1600;
+$baseHeight: 900;
+$font-regular: 'Source Sans Pro', sans-serif;
+$font-caption: 'Audiowide', cursive;
+
+@function em($pixels, $context: $browserContext) {
+  @return #{$pixels/$context}em;
+}
+
+@function vh($target) {
+  $vh-context: ($baseHeight*.01);
+  @return #{$target/$vh-context}vh;
+}
+
+@function vw($target) {
+  $vw-context: ($baseWidth*.01);
+  @return #{$target/$vw-context}vw;
+}

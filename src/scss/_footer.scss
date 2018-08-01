@@ -1,0 +1,45 @@
+@import "functions";
+
+.content__footer {
+  display: flex;
+  height: vw(125);
+  justify-content: space-between;
+  align-items: center;
+  margin-top: vw(125);
+  div {
+    height: auto;
+    display: flex;
+  }
+  img {
+    width: vw(38);
+    height: vw(38);
+  }
+  .footer__navigation {
+    a {
+      margin-right: vw(38);
+      cursor: pointer;
+      transition: 0.3s;
+      &:hover {
+        filter: brightness(105%)
+      }
+      &:active {
+        opacity: 0.4;
+      }
+    }
+  }
+  a, p {
+    font-size: vw(14);
+    font-family: $font-regular;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  p {
+    margin-right: vw(20);
+    a {
+      text-decoration: underline;
+    }
+  }
+  .footer__logo {
+    margin: 0;
+  }
+}
